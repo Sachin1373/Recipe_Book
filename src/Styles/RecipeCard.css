@@ -1,0 +1,102 @@
+/* Recipe Card General Styles */
+.recipe-card {
+  position: relative;
+  width: 250px;
+  padding: 15px;
+  background-color: #ffffff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  margin: 10px;
+  text-align: center;
+  transition: transform 0.2s ease;
+}
+
+.recipe-card:hover {
+  transform: translateY(-5px);
+}
+
+/* Recipe Image */
+.recipe-image {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-bottom: 10px;
+}
+
+/* Recipe Title */
+.recipe-title {
+  font-weight: bold;
+  font-size: 16px;
+  color: #333;
+  margin-bottom: 10px;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+/* Heart Icon */
+.icon-container {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.favorite-icon {
+  cursor: pointer;
+  font-size: 24px;
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.favorite-icon:hover {
+  transform: scale(1.2);
+}
+
+/* Details Button */
+.details-container {
+  margin-top: 10px;
+}
+
+.details-button {
+  display: inline-block;
+  text-decoration: none;
+  color: #fff;
+  background-color: #007BFF;
+  padding: 8px 12px;
+  border-radius: 5px;
+  font-size: 14px;
+  transition: background-color 0.3s ease;
+}
+
+.details-button:hover {
+  background-color: #0056b3;
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+  .recipe-card {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+  }
+
+  .recipe-image {
+    height: 120px;
+  }
+
+  .recipe-title {
+    font-size: 14px;
+  }
+
+  .favorite-icon {
+    font-size: 20px;
+  }
+
+  .details-button {
+    font-size: 12px;
+    padding: 6px 10px;
+  }
+}
